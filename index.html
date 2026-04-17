@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Global Group</title>
+  <meta name="description" content="Cloud Global Group is a venture studio partnering with healthtech, insurtech, traveltech, and future-of-work companies from zero to one and beyond." />
+  <meta property="og:title" content="Cloud Global Group" />
+  <meta property="og:description" content="A venture studio for healthtech, insurtech, traveltech, future of work, and selective sportstech." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.2rem, 1.3rem + 3vw, 4.6rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
+      --color-bg: #f4f0ea;
+      --color-surface: #f8f5f0;
+      --color-surface-2: #fcfaf7;
+      --color-surface-offset: #ece4db;
+      --color-border: rgba(34, 42, 62, 0.11);
+      --color-divider: rgba(34, 42, 62, 0.09);
+      --color-text: #222a3e;
+      --color-text-muted: #5f6576;
+      --color-text-faint: #8f92a0;
+      --color-primary: #2c4f86;
+      --color-primary-soft: rgba(44, 79, 134, 0.08);
+      --color-secondary: #964f58;
+      --color-secondary-soft: rgba(150, 79, 88, 0.08);
+      --color-text-inverse: #f8f5f0;
+      --radius-sm: 0.375rem; --radius-md: 0.75rem; --radius-lg: 1.25rem; --radius-xl: 2rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(24, 25, 32, 0.05);
+      --shadow-md: 0 12px 32px rgba(24, 25, 32, 0.08);
+      --content-default: 1100px;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Manrope', Arial, sans-serif;
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #131722;
+      --color-surface: #171c28;
+      --color-surface-2: #1c2230;
+      --color-surface-offset: #232a39;
+      --color-border: rgba(239, 233, 226, 0.12);
+      --color-divider: rgba(239, 233, 226, 0.1);
+      --color-text: #eee8df;
+      --color-text-muted: #bab2a7;
+      --color-text-faint: #8a8790;
+      --color-primary: #7fa3de;
+      --color-primary-soft: rgba(127, 163, 222, 0.12);
+      --color-secondary: #c98791;
+      --color-secondary-soft: rgba(201, 135, 145, 0.12);
+      --color-text-inverse: #131722;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+      --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.36);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        --color-bg: #131722; --color-surface: #171c28; --color-surface-2: #1c2230; --color-surface-offset: #232a39; --color-border: rgba(239, 233, 226, 0.12); --color-divider: rgba(239, 233, 226, 0.1); --color-text: #eee8df; --color-text-muted: #bab2a7; --color-text-faint: #8a8790; --color-primary: #7fa3de; --color-primary-soft: rgba(127, 163, 222, 0.12); --color-secondary: #c98791; --color-secondary-soft: rgba(201, 135, 145, 0.12); --color-text-inverse: #131722;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      min-height: 100dvh;
+      background: radial-gradient(circle at top left, var(--color-primary-soft), transparent 28%), radial-gradient(circle at 85% 18%, var(--color-secondary-soft), transparent 22%), var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; background: none; border: none; cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    .skip-link { position: absolute; left: var(--space-4); top: -3rem; background: var(--color-text); color: var(--color-text-inverse); padding: var(--space-2) var(--space-3); z-index: 100; }
+    .skip-link:focus { top: var(--space-4); }
+    .shell { width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto; }
+    .site-header { position: sticky; top: 0; z-index: 40; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--color-bg) 80%, transparent); border-bottom: 1px solid transparent; }
+    .site-header.scrolled { border-color: var(--color-divider); }
+    .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 4.75rem; }
+    .brand { display: inline-flex; align-items: center; gap: var(--space-4); }
+    .brand-mark { width: 3.2rem; height: 3.2rem; padding: 0.3rem; border: 1px solid var(--color-border); border-radius: 50%; color: var(--color-primary); background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 9%, var(--color-surface-2)), color-mix(in srgb, var(--color-secondary) 10%, var(--color-surface-2))); box-shadow: var(--shadow-sm); flex: none; }
+    .brand-wording { display: flex; flex-direction: column; gap: 0.1rem; line-height: 1.05; }
+    .brand-wording span:first-child { font-size: 0.88rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text); }
+    .brand-wording span:last-child { color: var(--color-text-muted); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
+    .header-actions { display: flex; align-items: center; gap: var(--space-3); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .header-link { padding: var(--space-2) 0; position: relative; }
+    .header-link::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform var(--transition-interactive); }
+    .header-link:hover::after, .header-link:focus-visible::after { transform: scaleX(1); }
+    .theme-toggle { width: 2.5rem; height: 2.5rem; border: 1px solid var(--color-border); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: var(--color-text); background: var(--color-surface); box-shadow: var(--shadow-sm); }
+    main { padding-block: clamp(var(--space-8), 4vw, var(--space-16)) var(--space-12); }
+    .hero { min-height: calc(100dvh - 6rem); display: grid; align-items: end; padding-block: clamp(var(--space-12), 9vw, var(--space-24)); }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(var(--space-8), 5vw, var(--space-20)); align-items: end; }
+    .eyebrow { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-text-muted); margin-bottom: var(--space-6); }
+    h1 { font-family: var(--font-display); font-size: var(--text-2xl); line-height: 0.94; font-weight: 400; letter-spacing: -0.03em; max-width: 17ch; text-wrap: balance; }
+    .hero-copy { margin-top: var(--space-6); max-width: 34rem; color: var(--color-text-muted); }
+    .hero-panel { padding: var(--space-6); background: linear-gradient(180deg, var(--color-surface-2), var(--color-surface)); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); align-self: center; position: relative; overflow: hidden; }
+    .hero-panel::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); opacity: 0.75; }
+    .panel-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-faint); margin-bottom: var(--space-5); }
+    .panel-list { display: grid; gap: var(--space-4); }
+    .panel-item { padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-divider); }
+    .panel-item:last-child { padding-bottom: 0; border-bottom: 0; }
+    .panel-item strong { display: block; font-size: var(--text-sm); font-weight: 700; color: var(--color-text); margin-bottom: 0.15rem; }
+    .panel-item span { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .section { padding-block: clamp(var(--space-10), 8vw, var(--space-20)); border-top: 1px solid var(--color-divider); }
+    .section-grid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: clamp(var(--space-6), 6vw, var(--space-16)); }
+    .section-kicker { font-size: var(--text-xs); color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: var(--space-3); }
+    h2 { font-size: var(--text-xl); line-height: 1.05; font-family: var(--font-display); font-weight: 400; letter-spacing: -0.02em; max-width: 10ch; }
+    .section-copy { display: grid; gap: var(--space-5); color: var(--color-text-muted); max-width: 44rem; }
+    .focus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-8); }
+    .focus-card { padding: var(--space-5); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); position: relative; }
+    .focus-card::before { content: ""; position: absolute; top: var(--space-4); left: var(--space-4); width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--color-primary); box-shadow: 0 0 0 6px var(--color-primary-soft); }
+    .focus-card:nth-child(even)::before { background: var(--color-secondary); box-shadow: 0 0 0 6px var(--color-secondary-soft); }
+    .focus-card strong { display: block; font-size: var(--text-sm); letter-spacing: 0.01em; margin: 0 0 var(--space-2) 1rem; color: var(--color-text); }
+    .focus-card span { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .statement-stack { display: grid; gap: var(--space-5); }
+    .statement { padding: clamp(var(--space-7, 1.75rem), 5vw, var(--space-10)); background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 6%, var(--color-surface)), color-mix(in srgb, var(--color-secondary) 6%, var(--color-surface))); border-radius: var(--radius-xl); border: 1px solid color-mix(in srgb, var(--color-primary) 10%, var(--color-border)); box-shadow: var(--shadow-sm); }
+    .statement p { font-family: var(--font-display); font-size: clamp(1.35rem, 1rem + 1vw, 2rem); line-height: 1.1; letter-spacing: -0.015em; max-width: none; }
+.statement--full p:first-child { max-width: none; }
+    .statement-note { margin-top: var(--space-3); color: var(--color-text-muted); max-width: 60ch; font-family: var(--font-body) !important; font-size: var(--text-sm) !important; letter-spacing: 0; line-height: 1.6; }
+.globe-support { display: flex; justify-content: center; padding-top: var(--space-1); color: var(--color-text-muted); }
+.globe-support svg { width: min(17rem, 100%); height: auto; }
+    .footer { padding-block: var(--space-8) var(--space-12); border-top: 1px solid var(--color-divider); color: var(--color-text-faint); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer-inner { display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; }
+    @media (max-width: 960px) {
+      .hero { min-height: auto; }
+      .hero-grid, .section-grid, .focus-grid { grid-template-columns: 1fr; }
+      h1 { max-width: 17ch; }
+      h2 { max-width: none; }
+    }
+    @media (max-width: 560px) {
+      .header-actions .header-link { display: none; }
+      .brand-mark { width: 2.7rem; height: 2.7rem; }
+      .brand-wording span:first-child { font-size: 0.79rem; }
+      .brand-wording span:last-child { font-size: 0.62rem; }
+      .hero-panel, .focus-card, .statement { padding: var(--space-5); }
+      .shell { width: min(calc(100% - 1.25rem), var(--content-default)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a href="#top" class="brand" aria-label="Cloud Global Group home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8C15.716 8 9 14.716 9 23C9 31.284 15.716 38 24 38C32.284 38 39 31.284 39 23" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M24 14L29.5 23L24 32" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 14L13.5 23L19 32" stroke="url(#accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="accent" x1="13.5" y1="23" x2="19" y2="23" gradientUnits="userSpaceOnUse">
+                <stop stop-color="currentColor"/>
+                <stop offset="1" stop-color="#964f58"/>
+              </linearGradient>
+          </defs>
+          </svg>
+        </span>
+        <span class="brand-wording">
+          <span>Cloud Global Group</span>
+          <span>Venture Studio</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <a class="header-link" href="#focus">Focus</a>
+        <a class="header-link" href="#approach">Approach</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero shell" id="top">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Cloud Global Group LLC</p>
+          <h1>Building, advising, and investing in what comes next.</h1>
+          <p class="hero-copy">Cloud Global Group is a venture studio partnering with healthtech, insurtech, traveltech, and future-of-work companies from zero to one and beyond. The firm supports founders and teams at the stage where clarity matters most: early product thinking, sharper positioning, and the first real path to market.</p>
+        </div>
+        <aside class="hero-panel" aria-label="Cloud Global Group focus summary">
+          <p class="panel-label">Current orientation</p>
+          <div class="panel-list">
+            <div class="panel-item"><strong>Zero to one</strong><span>Early venture design, concept refinement, market shape, and MVP direction.</span></div>
+            <div class="panel-item"><strong>Operator-led advisory</strong><span>Embedded work with founders navigating first product, first customers, and first traction.</span></div>
+            <div class="panel-item"><strong>Selective investing</strong><span>Particular interest in sportstech and adjacent platforms reshaping performance and engagement.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section shell" id="focus">
+      <div class="section-grid">
+        <div>
+          <p class="section-kicker">Focus</p>
+          <h2>Sectors with structural tailwinds.</h2>
+        </div>
+        <div>
+          <div class="section-copy">
+            <p>Cloud Global Group works with companies operating at the intersection of how people live, work, move, protect themselves, and stay well. The emphasis is not breadth for its own sake, but a set of sectors where technology, distribution, and behavior are all shifting at once.</p>
+            <p>The current lens spans healthtech, insurtech, traveltech, and the future of work, with selective exposure to sportstech where data, performance, and experience are converging in new ways.</p>
+          </div>
+          <div class="focus-grid" aria-label="Sector focus areas">
+            <article class="focus-card"><strong>Healthtech</strong><span>Consumer health, digital care experiences, enablement, and new models of access.</span></article>
+            <article class="focus-card"><strong>Insurtech</strong><span>Embedded protection, modern distribution, product strategy, and customer trust.</span></article>
+            <article class="focus-card"><strong>Traveltech</strong><span>Booking, distribution, ancillary revenue, loyalty, and globally mobile users.</span></article>
+            <article class="focus-card"><strong>Future of work</strong><span>Tools, services, and communities supporting distributed teams and modern professionals.</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section shell" id="approach">
+      <div class="section-grid">
+        <div>
+          <p class="section-kicker">Approach</p>
+          <h2>Built as a venture platform, not a traditional consultancy.</h2>
+        </div>
+        <div class="section-copy">
+          <p>The model is intentionally simple: work closely with a small number of companies, contribute where strategy and execution meet, and stay anchored in the problems that appear earliest in a venture’s life. That includes sharper customer definition, product framing, monetization logic, and founder-level decision support.</p>
+          <p>Cloud Global Group also develops and holds ideas of its own. Over time, the platform is designed to be a home for advisory work, studio initiatives, and selective investment activity tied together by a consistent point of view.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section shell" aria-label="Brand statement">
+      <div class="statement-stack">
+        <div class="statement statement--full">
+          <p>Building a portfolio around the future of health, protection, mobility, work, and performance.</p>
+        </div>
+        <div class="globe-support" aria-label="Global perspective illustration">
+          <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract globe illustration">
+            <defs>
+              <linearGradient id="globeFill" x1="112" y1="42" x2="304" y2="184" gradientUnits="userSpaceOnUse">
+                <stop stop-color="color-mix(in srgb, var(--color-primary) 8%, var(--color-surface-2))"/>
+                <stop offset="1" stop-color="color-mix(in srgb, var(--color-secondary) 8%, var(--color-surface-2))"/>
+              </linearGradient>
+              <linearGradient id="route" x1="160" y1="118" x2="265" y2="92" gradientUnits="userSpaceOnUse">
+                <stop stop-color="var(--color-primary)"/>
+                <stop offset="1" stop-color="var(--color-secondary)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="110" r="72" fill="url(#globeFill)" stroke="var(--color-border)" stroke-width="1.6"/>
+            <ellipse cx="210" cy="110" rx="72" ry="72" fill="none" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <ellipse cx="210" cy="110" rx="49" ry="72" fill="none" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <ellipse cx="210" cy="110" rx="24" ry="72" fill="none" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <path d="M138 110H282" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <path d="M146 86H274" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <path d="M146 134H274" stroke="var(--color-divider)" stroke-width="1.1"/>
+            <circle cx="162" cy="118" r="4.8" fill="var(--color-primary)"/>
+            <circle cx="265" cy="92" r="4.8" fill="var(--color-secondary)"/>
+            <path d="M168 117C188 116 209 110 230 99C241 94 252 91 261 92" stroke="url(#route)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="4 6" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>Cloud Global Group LLC</span>
+      <span>Atlanta · NYC · United States</span>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      let theme = prefersDark ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const setIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 2.5V5"></path><path d="M12 19V21.5"></path><path d="M4.93 4.93L6.7 6.7"></path><path d="M17.3 17.3L19.07 19.07"></path><path d="M2.5 12H5"></path><path d="M19 12H21.5"></path><path d="M4.93 19.07L6.7 17.3"></path><path d="M17.3 6.7L19.07 4.93"></path></svg>'
+          : '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      };
+      setIcon();
+      toggle.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        setIcon();
+      });
+      const header = document.getElementById('site-header');
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 16);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
+</body>
+</html>
